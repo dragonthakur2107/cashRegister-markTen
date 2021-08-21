@@ -1,9 +1,9 @@
-const billInput = document.querySelector("#bill-Amount");
+var billInput = document.querySelector("#bill-Amount");
 const btnNext = document.querySelector("#btn-Bill");
 const cashSec = document.querySelector("#cash-Sec");
 const errMsgBill = document.querySelector(".error-Message-Bill");
 
-const cashInput = document.querySelector("#cash-Amount");
+var cashInput = document.querySelector("#cash-Amount");
 const btnCheck = document.querySelector("#btn-Cash");
 const tableSec = document.querySelector("#table-Sec");
 const errMsgCash = document.querySelector(".error-Message-Cash");
@@ -18,16 +18,12 @@ errMsgCash.style.display="none";
 
 btnNext.addEventListener("click",function checkBill()
 {
-    if(billInput.value>0)
-    {
+    if(billInput.value>0){
         cashSec.style.display="block";
         btnNext.style.display="none";
         btnCheck.addEventListener("click",function checkCash()
         {
-        if(cashInput.value>=billInput.value)
-        { 
-           
-           btnCheck.style.display="none";
+        if(cashInput.value >= billInput.value){ 
            returnAmount = cashInput.value-billInput.value;
            tableSec.style.display="block";
            clcChange(returnAmount);
