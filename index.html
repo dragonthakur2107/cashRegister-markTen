@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <!-- container -->
+    <div class="main-Container">
+        <h1>Cash Register</h1>
+
+        <!-- Bill Section -->
+        <div id="bill-Sec">
+            <p class="description-One">Enter Bill Amount and Click Next.</p>
+            <label for="bill-Amount">Bill Amount:</label>
+            <input class="input" id="bill-Amount" type="text">
+            <button class="btn"id="btn-Bill">Next</button>
+            <p class="error-Message-Bill"></p>
+        </div> 
+
+        <!-- Cash Section -->
+        <div id="cash-Sec">
+            <p class="description-Two">Enter Cash Amount and Click Check.</p>
+            <label for="cash-Amount">Cash Amount:</label>
+            <input class="input" id="cash-Amount"type="text">
+            <button class="btn"id="btn-Cash">Check</button>
+            <p class="error-Message-Cash"></p>
+        </div>
+
+        <!-- Table Section -->
+        <div id="table-Sec">
+            <table class="change-Table main-Container">
+                <caption class="table-Caption">Return Change</caption>
+
+                <tr>
+                    <th class="table-Header">Notes</th>
+                    <td class="table-Elements">2000</td>
+                    <td class="table-Elements">500</td>
+                    <td class="table-Elements">100</td>
+                    <td class="table-Elements">20</td>
+                    <td class="table-Elements">10</td>
+                    <td class="table-Elements">5</td>
+                    <td class="table-Elements">1</td>
+                </tr>
+
+                <tr class="table-Elements">
+                    <th class=" table-Header table-Elements">No. of Notes</th>
+                    <td class="no-Of-Notes table-Elements"></td>
+                    <td class="no-Of-Notes table-Elements"></td>
+                    <td class="no-Of-Notes table-Elements"></td>
+                    <td class="no-Of-Notes table-Elements"></td>
+                    <td class="no-Of-Notes table-Elements"></td>
+                    <td class="no-Of-Notes table-Elements"></td>
+                    <td class="no-Of-Notes table-Elements"></td>
+                </tr>
+            </table>
+
+        </div>
+
+    </div>
+
+</body>
+<script src="app.js"></script>
+</html>

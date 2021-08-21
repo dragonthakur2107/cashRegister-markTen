@@ -1,0 +1,39 @@
+.main-Container{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(1, 63, 1);
+    border-radius: 1rem;
+    color: white;
+}
+.input{
+    display: block;
+    margin:auto;
+    margin-top: 1rem;
+    padding:0.5rem;
+    border-radius: 0.4rem;
+}
+.btn{
+    margin: 1rem;
+    padding: 0.2rem 1rem;
+    border-radius: 0.4rem;
+}
+.change-Table{
+    padding: 1rem;
+}
+.table-Caption{
+    padding : 0.5rem;
+}
+.table-Header{
+    border:  0.5rem solid white;
+    background-color: white;
+    color: black;
+    
+}
+.table-Elements{
+    border:  0.5rem solid white;
+    background-color: white;
+    color: black;
+}
