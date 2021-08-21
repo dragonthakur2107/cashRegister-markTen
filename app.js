@@ -1,9 +1,9 @@
-var billInput = document.querySelector("#bill-Amount");
+const billInput = document.querySelector("#bill-Amount");
 const btnNext = document.querySelector("#btn-Bill");
 const cashSec = document.querySelector("#cash-Sec");
 const errMsgBill = document.querySelector(".error-Message-Bill");
 
-var cashInput = document.querySelector("#cash-Amount");
+const cashInput = document.querySelector("#cash-Amount");
 const btnCheck = document.querySelector("#btn-Cash");
 const tableSec = document.querySelector("#table-Sec");
 const errMsgCash = document.querySelector(".error-Message-Cash");
