@@ -18,14 +18,17 @@ errMsgCash.style.display="none";
 
 btnNext.addEventListener("click",function checkBill()
 {     
-      const billAmount=Number(billInput.value);
-      const cashAmount=Number(cashInput.value);
+      const billAmount = Number(billInput.value);
+      const cashAmount= Number(cashInput.value);
     if(billAmount>0){
         cashSec.style.display="block";
         btnNext.style.display="none";
         btnCheck.addEventListener("click",function checkCash()
         {
+            const billAmount = Number(billInput.value);
+            const cashAmount= Number(cashInput.value);
         if(cashAmount >= billAmount){ 
+            console.log()
            returnAmount = cashAmount-billAmount;
            tableSec.style.display="block";
            clcChange(returnAmount);
