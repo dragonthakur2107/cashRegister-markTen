@@ -17,14 +17,16 @@ errMsgBill.style.display="none";
 errMsgCash.style.display="none";
 
 btnNext.addEventListener("click",function checkBill()
-{
-    if(billInput.value>0){
+{     
+      const billAmount=Number(billInput.value);
+      const cashAmount=Number(cashInput.value);
+    if(billAmount>0){
         cashSec.style.display="block";
         btnNext.style.display="none";
         btnCheck.addEventListener("click",function checkCash()
         {
-        if(cashInput.value >= billInput.value){ 
-           returnAmount = cashInput.value-billInput.value;
+        if(cashAmount >= billAmount){ 
+           returnAmount = cashAmount-billAmount;
            tableSec.style.display="block";
            clcChange(returnAmount);
            
